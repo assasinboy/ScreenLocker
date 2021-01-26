@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transitions_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id ="@+id/linear_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#191970">
+
+    <Button
+        android:id ="@+id/set_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  GO!  "
+        android:textSize="55dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ready_bg"
+        android:padding="15dp"
+        android:layout_marginBottom="92dp"
+        android:layout_above="@+id/test_button"
+        android:layout_alignStart="@+id/test_button" />
+
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:padding="15dp"
+        android:textSize="35dp"
+        android:text="TEST"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/stop_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:padding="15dp"
+        android:textSize="35dp"
+        android:text="STOP"
+        android:layout_marginBottom="9dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/test_button" />
+
+    </LinearLayout>
+</LinearLayout>

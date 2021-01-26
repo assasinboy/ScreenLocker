@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">screenLocker</string>
+
+    <string name="action_settings">About</string>
+
+    <string name="in_vehicle">Vehicle</string>
+    <string name="on_bicycle">Bicycle</string>
+    <string name="on_foot">On Foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown</string>
+    <string name="walking">Walking</string>
+    <string name="Satisfaction_Title">Please rate your satisfaction for this app</string>
+    <string name="unidentifiable_activity">No Detect</string>
+
+
+
+</resources>

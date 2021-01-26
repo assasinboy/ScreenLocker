@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="65dp"
+    android:id="@+id/chat_head_root"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--Profile image for the chat head.-->
+    <!--<SeekBar
+        android:id="@+id/brightness_seek_bar_vi"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="ContentDescription"/>-->
+    <!--
+        <SeekBar
+            android:id="@+id/brightness_seek_bar_vi"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="250"
+            android:progressDrawable="@drawable/progress_drawable"
+            android:thumb="@drawable/thumb_drawable"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:thumbOffset="0dp" />
+        -->
+
+    <!--Thumb-->
+    <ImageView
+        android:id="@+id/thumb_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/thumb_drawable"
+        tools:ignore="ContentDescription"/>
+
+    <!--Bar
+    <ImageView
+        android:id="@+id/bar_iv"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/horizantal_line"
+        tools:ignore="ContentDescription"/>
+    -->
+
+</RelativeLayout>

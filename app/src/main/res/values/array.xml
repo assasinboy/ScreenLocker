@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="satisfactions">
+        <item>Satisfied</item>
+        <item>Not satisfied</item>
+    </string-array>
+</resources>
