@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/screenLocker.iml" filepath="$PROJECT_DIR$/screenLocker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/screenLocker.iml" filepath="$PROJECT_DIR$/.idea/modules/screenLocker.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/screenLocker.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/screenLocker.app.iml" />
     </modules>
   </component>

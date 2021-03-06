@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="wearpower.screenlocker">
+    package="wearpower.Wearpower">
 
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -20,10 +20,12 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+
+
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions"/>
     <uses-permission android:name="android.permission.BATTERY_STATS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -35,7 +37,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:requestLegacyExternalStorage="true">
-        <activity android:name=".MainActivity"
+        <activity android:name="wearpower.Wearpower.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,17 +46,19 @@
             </intent-filter>
         </activity>
 
+        <receiver
+            android:name="wearpower.Wearpower.NotificationReceiver"></receiver>
 
 
 
-        <service android:name=".ServiceClassPhone"/>
+        <service android:name="wearpower.Wearpower.ServiceClassPhone"/>
 
-        <service android:name=".ScreenService"/>
+        <service android:name="wearpower.Wearpower.ScreenService"/>
 
 
 
         <service
-            android:name=".DetectedActivitiesIntentService"
+            android:name="wearpower.Wearpower.DetectedActivitiesIntentService"
             android:exported="false" />
 
 
